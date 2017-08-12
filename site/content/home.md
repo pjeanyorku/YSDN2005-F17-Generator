@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals and Methods: Visual Interaction Design"
+title: "Processes and Workflows: Visual Interaction Design"
 slug: /
 ---
 
