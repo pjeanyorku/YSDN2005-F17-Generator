@@ -1,0 +1,27 @@
+// # Utilities: Spacing
+// -----------------------------------------------------------------------------
+// Helper classes for working with, or removing margins and padding
+
+@each $prop in $properties {
+	@each $size, $dimension in $sizes {
+		.u-#{$prop}-#{$size} {
+			#{$prop}: #{$dimension} !important;
+		}
+		@each $side in $sides {
+			.u-#{$prop}-#{$side}-#{$size} {
+				#{$prop}-#{$side}: #{$dimension} !important;
+			}
+		}
+	}
+}
+
+@each $prop in $properties {
+	.u-no-#{$prop} {
+		#{$prop}: 0 !important;
+	}
+	@each $side in $sides {
+		.u-no-#{$prop}-#{$side} {
+			#{$prop}-#{$side}: 0 !important;
+		}
+	}
+}

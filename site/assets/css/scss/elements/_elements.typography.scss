@@ -1,0 +1,129 @@
+// # Elements: Typography
+// -----------------------------------------------------------------------------
+
+h1,
+.c-h1 {
+	@include font-size($font-size-h1);
+	letter-spacing: -0.02em;
+	font-weight: $font-weight-bold;
+	@include rem(margin-bottom, $global-spacing-unit);
+}
+
+h2,
+.c-h2 {
+	@include font-size($font-size-h2);
+	letter-spacing: -0.02em;
+	font-weight: $font-weight-bold;
+	@include rem(margin-top, $global-spacing-unit-large);
+}
+
+h3,
+.c-h3 {
+	@include font-size($font-size-h3);
+	font-weight: $font-weight-bold;
+
+}
+
+h4,
+.c-h4 {
+	@include font-size($font-size-h4);
+}
+
+h5,
+.c-h5 {
+	@include font-size($font-size-h5);
+}
+
+h6,
+.c-h6 {
+	@include font-size($font-size-h6);
+}
+
+strong {
+	font-weight: $font-weight-bold;
+}
+
+em {
+	font-style: italic;
+}
+
+code {
+	font-family: $font-family-mono;
+	background-color: $grey-95;
+	border-radius: $border-radius;
+	@include rem(padding, $global-spacing-unit-tiny);
+}
+
+sub,
+sup {
+	vertical-align: baseline;
+	font-size: 0.8em;
+	position: relative;
+	top: -0.5em;
+}
+
+sub {
+	top: 0.3em;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+small {
+	@include font-size($font-size-h6);
+}
+
+hr {
+	border: solid $color-border--light;
+	border-width: 1px 0 0;
+	height: 0;
+}
+
+
+
+// ## Lists
+// -----------------------------------------------------------------------------
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li ul,
+li ol {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+// 1. Consistent indentation for lists
+dd,
+ol,
+ul {
+	margin-left: 1.3333rem; // [1]
+}
+
+
+
+// ## Links
+// -----------------------------------------------------------------------------
+
+a {
+	color: $color-link;
+	text-decoration: underline;
+	transition: 0.2s;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{ site.root }}assets/css/style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.root }}assets/logos/icon-180.png">
+	</head>
+	<body>
+		<div class="o-wrapper">
+			<header class="c-site-header u-clearfix">
+				<div class="o-box">
+					<p class="c-site-header__logo"><img src="{{ site.root }}assets/logos/yorku-logo.png" alt="York University Logo" width="33" height="33" class="u-margin-right-small"> FA/YSDN 1006 - Winter 2018</p>
+				</div>
+			</header>
+			<div class="o-layout">
+				<div class="o-layout__item u-1of4-large">
+					<nav class="c-navigation c-navigation--primary">
+						<ul class="o-list-bare c-navigation__list">
+							<li class="c-navigation__item {{ isSelected '' content.meta.slug }}"><a class="c-navigation__link" href="{{ site.root }}">Home</a></li>
+							<li class="c-navigation__item {{ isSelected 'weekly-schedule' content.meta.slug }}"><a class="c-navigation__link" href="{{ site.root }}weekly-schedule/">Weekly Schedule</a></li>
+
+							<li class="c-navigation__item {{ isSelected 'projects/project-1' content.meta.slug }}"><a class="c-navigation__link" href="{{ site.root }}projects/project-1/">Project 1</a></li>
+							<li class="c-navigation__item {{ isSelected 'projects/project-2' content.meta.slug }}"><a class="c-navigation__link" href="{{ site.root }}projects/project-2/">Project 2</a></li>
+
+							<li class="c-navigation__item {{ isSelected 'exercises/ice' content.meta.slug }}"><a class="c-navigation__link" href="{{ site.root }}exercises/ice/">In-Class Exercises</a></li>
+							<li class="c-navigation__item {{ isSelected 'exercises/exercise-a' content.meta.slug }}"><a class="c-navigation__link" href="{{ site.root }}exercises/exercise-a/">Exercise A</a></li>
+							<li class="c-navigation__item {{ isSelected 'exercises/exercise-b' content.meta.slug }}"><a class="c-navigation__link" href="{{ site.root }}exercises/exercise-b/">Exercise B</a></li>
+							<li class="c-navigation__item {{ isSelected 'exercises/exercise-c' content.meta.slug }}"><a class="c-navigation__link" href="{{ site.root }}exercises/exercise-c/">Exercise C</a></li>
+
+							<li class="c-navigation__item {{ isSelected 'resources' content.meta.slug }}"><a class="c-navigation__link" href="{{ site.root }}resources/">Resources</a></li>
+							<li class="c-navigation__item {{ isSelected 'faq' content.meta.slug }}"><a class="c-navigation__link" href="{{ site.root }}faq/">FAQ</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="o-layout__item u-3of4-large">
+					<main>
+						<div class="c-card">
+							<div class="o-box o-box--giant">
+								{{> @partial-block }}
+							</div>
+						</div>
+					</main>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

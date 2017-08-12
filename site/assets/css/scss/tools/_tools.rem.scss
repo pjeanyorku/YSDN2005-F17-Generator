@@ -1,0 +1,17 @@
+// # Tools: Rem
+// -----------------------------------------------------------------------------
+
+
+// Calculate baseline grid compatible rem based values.
+// Convert any px value into its rem equivalent.
+
+@mixin rem($property, $value, $important: false) {
+	@if ($important == true) {
+		$important: !important;
+	}
+	@elseif ($important == false) {
+		$important: null;
+	}
+
+	#{$property}: $value / $global-font-size * 1rem $important;
+}

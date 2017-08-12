@@ -1,0 +1,9 @@
+// # Compoinents: Card
+// -----------------------------------------------------------------------------
+
+.c-card {
+	background-color: #fff;
+	box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.2);
+	border-radius: $border-radius;
+	@include rem(margin-bottom, $global-spacing-unit-large);
+}

@@ -1,0 +1,19 @@
+{
+	"name": "philbuchanan-generator",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git://github.com/philbuchanan/philbuchanan-generator",
+	"description": "Static site generator",
+	"dependencies": {
+		"fs-extra": "1.0.0",
+		"gray-matter": "2.1.0",
+		"handlebars": "4.0.6",
+		"moment": "2.17.1",
+		"moment-timezone": "0.5.11",
+		"recursive-readdir-sync": "1.0.6",
+		"marked": "0.3.6"
+	},
+	"scripts": {
+		"make": "node make"
+	}
+}

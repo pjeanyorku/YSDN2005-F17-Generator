@@ -1,0 +1,97 @@
+// # Settings: Sass Variables
+// -----------------------------------------------------------------------------
+
+// ## Color Variables
+// -----------------------------------------------------------------------------
+
+// Colors
+$grey-100:                          #fff;    // Text: Use on $grey-40 or darker
+$grey-98:                           #fafafa; // Text: Use on $grey-40 or darker
+$grey-95:                           #f2f2f2; // Text: Use on $grey-40 or darker
+$grey-90:                           #e5e5e5; // Text: Use on $grey-40 or darker
+$grey-75:                           #bfbfbf; // Text: Use on $grey-30 or darker
+$grey-50:                           #808080; // Text: Use on $grey-0 only
+$grey-40:                           #666;    // Text: Use on $grey-90 or lighter
+$grey-30:                           #4d4d4d; // Text: Use on $grey-75 or lighter
+$grey-0:                            #000;    // Text: Use on $grey-50 or lighter
+
+$color-primary:                     #cf343d;
+
+$color-text:                        $grey-0;
+
+$color-link:                        $color-primary;
+
+$color-border:                      $grey-75;
+$color-border--light:               $grey-90;
+
+$color-error:                       #f00;
+$color-success:                     #0f0;
+
+$color-selected:                    rgba($color-primary, 0.2);
+
+
+
+// ## Typography
+// -----------------------------------------------------------------------------
+
+$font-family-sans-serif:            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-family-mono:                  "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+
+$global-font-size:                  16px;
+$global-line-height:                24px;
+
+$global-spacing-unit:               round($global-line-height);
+$global-spacing-unit-tiny:          round($global-spacing-unit * 0.25);
+$global-spacing-unit-small:         round($global-spacing-unit * 0.5);
+$global-spacing-unit-large:         round($global-spacing-unit * 2);
+$global-spacing-unit-giant:         round($global-spacing-unit * 4);
+
+$font-size-h1:                      30px;
+$font-size-h2:                      22px;
+$font-size-h3:                      16px;
+$font-size-h4:                      14px;
+$font-size-h5:                      12px;
+$font-size-h6:                      10px;
+
+$font-weight-bold:                  600;
+
+
+
+// ## Grid
+// -----------------------------------------------------------------------------
+
+$wrapper-width:                     1400px;
+$fractions:                         (2, 3, 4, 8);
+$gutter:                            $global-spacing-unit / 2;
+
+$breakpoints: (
+	tiny:   475px,
+	small:  600px,
+	medium: 970px,
+	large:  $wrapper-width
+);
+
+
+
+// ## Properties & Sizes
+// -----------------------------------------------------------------------------
+
+$properties: (
+	margin,
+	padding
+);
+
+$sides: (
+	top,
+	right,
+	bottom,
+	left
+);
+
+$sizes: (
+	small:  $global-spacing-unit-small,
+	medium: $global-spacing-unit,
+	large:  $global-spacing-unit-large
+);
+
+$border-radius: 5px;

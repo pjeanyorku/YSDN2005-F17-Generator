@@ -1,0 +1,21 @@
+// # Objects: Layout
+// -----------------------------------------------------------------------------
+
+.o-layout {
+	@include clearfix();
+	margin-left: auto;
+	margin-right: auto;
+
+	.o-layout {
+		width: auto;
+		margin-left: -$gutter;
+		margin-right: -$gutter;
+	}
+}
+
+.o-layout__item {
+	float: left;
+	width: 100%;
+	padding-left: $gutter;
+	padding-right: $gutter;
+}

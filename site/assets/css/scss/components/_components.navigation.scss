@@ -1,0 +1,32 @@
+// # Components: Navigation
+// -----------------------------------------------------------------------------
+
+// ## Primary Navigation
+// -----------------------------------------------------------------------------
+
+.c-navigation {}
+
+.c-navigation__list {}
+
+.c-navigation__item {
+
+	&.is-selected {
+		a {
+			background-color: $color-selected;
+		}
+	}
+}
+
+.c-navigation__link {
+	display: block;
+	color: $color-text;
+	line-height: 1em;
+	text-decoration: none;
+	border-radius: $border-radius;
+	@include rem(margin-bottom, $global-spacing-unit-tiny);
+	@include rem(padding, $global-spacing-unit-small);
+
+	&:hover {
+		background-color: $grey-90;
+	}
+}

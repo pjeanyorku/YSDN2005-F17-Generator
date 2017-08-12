@@ -1,0 +1,29 @@
+// Objects: Island
+// -----------------------------------------------------------------------------
+
+// 1. So we can apply the `.o-box` class on naturally-inline elements.
+// 2. Remove the margin from the last child of a boxed off area so that we don’t
+//    end up with compounded margin/padding spacings.
+
+.o-island {
+	display: block; // [1]
+	@include rem(margin-bottom, $global-spacing-unit);
+	@include clearfix();
+
+	> :last-child {
+		margin-bottom: 0; // [2]
+	}
+}
+
+
+
+// ## Size Varients
+// -----------------------------------------------------------------------------
+
+.o-island--small {
+	@include rem(margin-bottom, $global-spacing-unit-small);
+}
+
+.o-island--large {
+	@include rem(margin-bottom, $global-spacing-unit-large);
+}

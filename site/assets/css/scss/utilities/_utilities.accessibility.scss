@@ -1,0 +1,30 @@
+// # Clearfix: Accessibility
+// -----------------------------------------------------------------------------
+
+.u-screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.u-skip-link {
+	color: $color-link;
+	background-color: $grey-98;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px 16px 7px;
+	outline: none;
+	transition: 0s;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+
+	&:focus {
+		left: 15px;
+		top: 15px;
+		clip: auto;
+		width: auto;
+		height: auto;
+		z-index: 900;
+	}
+}

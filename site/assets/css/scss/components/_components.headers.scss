@@ -1,0 +1,12 @@
+// # Components: Headers
+// -----------------------------------------------------------------------------
+
+.c-site-header {
+	@include rem(margin-bottom, $global-spacing-unit-large);
+}
+
+.c-site-header__logo {
+	@include font-size($font-size-h4);
+	font-weight: $font-weight-bold;
+	margin-bottom: 0;
+}

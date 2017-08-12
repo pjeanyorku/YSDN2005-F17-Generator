@@ -1,0 +1,24 @@
+// # Utilities: Hide
+// -----------------------------------------------------------------------------
+
+.u-hidden {
+	display: none !important;
+}
+
+@mixin hidden($size) {
+	.u-hidden-#{$size} {
+		display: none !important;
+	}
+}
+
+@include respond-to-small-only {
+	@include hidden(small);
+}
+
+@include respond-to-medium-only {
+	@include hidden(medium);
+}
+
+@include respond-to-large-only {
+	@include hidden(large);
+}
